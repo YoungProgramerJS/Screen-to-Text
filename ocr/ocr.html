@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR z obrazu</title>
+<!-- v5 -->
+<script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>    <link rel="stylesheet" href="ocr.css">
+</head>
+<body>
+    <h1>Screen to text</h1>
+    <div class="container">
+        <div class="left">
+            <p>Nie ma zdjęcia! Kliknij (Ctrl+V) aby wkleić</p>
+            <canvas id="canvas" style="display: none;"></canvas>
+            <img id="image" src="assets/kitten.jpg" alt="Twój obraz" />
+        </div>
+        <div class="right">
+            <div class="result">Odczytany tekst:</div>
+            <div id="output"></div>
+        </div>
+    </div>
+    <script src="ocr.js"></script>
+</body>
+</html>
